@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SONIC — Testimonials</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="icon" href="./assets/img/sonic-mark.svg" type="image/svg+xml" />
+
+  <!-- Partners ribbon styles (يمكن نقلها لـ main.css) -->
+  <style>
+    .partners-ribbon{
+      display:flex; align-items:center; gap:18px;
+      padding:14px 16px; margin:22px 0 10px;
+      border:1px solid var(--ink-300); border-radius:16px; background:var(--surface);
+      box-shadow: var(--shadow-sm);
+    }
+    .partners-ribbon__title{ font-weight:800; color:var(--brand-navy); white-space:nowrap; }
+    .partners-logos{ display:flex; gap:16px; align-items:center; flex-wrap:wrap; margin:0; padding:0; list-style:none; }
+    .partner{ display:flex; align-items:center; gap:10px; padding:8px 10px; border-radius:12px; background: color-mix(in oklab, var(--surface) 95%, var(--brand-teal) 5%); border:1px solid color-mix(in oklab, var(--brand-teal) 40%, var(--ink-300)); }
+    .partner__logo{ height:24px; width:auto; display:block; filter: grayscale(0); opacity:.95; }
+    .partner__logo--oracle{ height:28px; }
+    .partner__tag{
+      font-size:.85rem; font-weight:700; color:#7c0a02; /* أحمر داكن */
+      background: linear-gradient(135deg, #fff0f0, #ffe5e5);
+      border:1px solid #f3b0b0; padding:4px 8px; border-radius:999px;
+      box-shadow: 0 6px 18px rgba(124,10,2,.08);
+      white-space:nowrap;
+    }
+    .badge-inline{
+      display:inline-flex; align-items:center; gap:8px; padding:6px 10px; border-radius:999px;
+      background: linear-gradient(135deg, #fff0f0, #ffe7e7);
+      border:1px solid #f3b0b0; color:#7c0a02; font-weight:800; font-size:.88rem;
+    }
+    .badge-inline img{ height:16px; width:auto; }
+    .t-stars{ color:#f3b30c; letter-spacing:2px; font-size:14px; }
+    .t-avatar img{ width:44px; height:44px; object-fit:cover; }
+    .testimonials-cta{
+      margin-top: 34px;
+      display:flex; align-items:center; justify-content:space-between; gap:16px;
+      flex-wrap:wrap; border:1px solid var(--ink-300); border-radius:16px; padding:18px; background:var(--surface);
+      box-shadow: var(--shadow-sm);
+    }
+    .testimonials-cta p{ margin:0; color:var(--ink-700); }
+  </style>
+
+  <!-- SEO: Structured Data (Organization + Reviews + Oracle OPN) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Sonic Smart Solutions",
+    "url":"https://www.example.com/",
+    "logo":"https://www.example.com/assets/img/sonic-mark.svg",
+    "memberOf": {
+      "@type":"Organization",
+      "name":"Oracle PartnerNetwork"
+    },
+    "brand": { "@type":"Brand", "name":"Oracle Partner" },
+    "aggregateRating": {
+      "@type":"AggregateRating",
+      "ratingValue":"5",
+      "reviewCount":"24"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader" aria-hidden="true">
+    <img class="preloader__logo spin" src="./assets/img/sonic-mark.svg" alt="Sonic logo preloader" />
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="brand" href="index.html"><span class="brand__mark">S</span><span class="brand__name">SONIC</span></a>
+      <nav class="nav">
+        <a href="about.html">Why Sonic</a>
+        <a href="testimonials.html" class="is-active" aria-current="page">Testimonials</a>
+        <a href="industries.html">Industries</a>
+        <a href="contact.html" class="nav__cta btn--magnet">Let’s Talk</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+    <div class="container nav-mobile">
+      <a href="about.html">Why Sonic</a>
+      <a href="testimonials.html" aria-current="page">Testimonials</a>
+      <a href="industries.html">Industries</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <section class="section testimonials">
+      <div class="container">
+        <h1 class="section__title">What Our Clients Say</h1>
+        <p class="section__lead">
+          Real results. Real impact. Stories from partners across mobility, construction, and manufacturing.
+          &nbsp;<span class="badge-inline">
+            <img src="./assets/img/partners/oracle-partner.svg" alt="" aria-hidden="true"> Oracle Partner
+          </span>
+        </p>
+
+        <!-- Partners / Certifications -->
+        <div class="partners-ribbon reveal" data-anim="fade-up" style="--delay:120ms">
+          <div class="partners-ribbon__title">Partners & Certifications</div>
+          <ul class="partners-logos">
+            <li class="partner">
+              <img src="./assets/img/partners/oracle-partner.svg" alt="Oracle Partner" class="partner__logo partner__logo--oracle" loading="lazy">
+              <span class="partner__tag">Oracle Partner</span>
+            </li>
+            <li class="partner">
+              <img src="./assets/img/partners/aws.svg" alt="AWS" class="partner__logo" loading="lazy">
+              <span class="partner__tag">Cloud</span>
+            </li>
+            <li class="partner">
+              <img src="./assets/img/partners/azure.svg" alt="Microsoft Azure" class="partner__logo" loading="lazy">
+              <span class="partner__tag">Integration</span>
+            </li>
+            <li class="partner">
+              <img src="./assets/img/partners/sap.svg" alt="SAP" class="partner__logo" loading="lazy">
+              <span class="partner__tag">Migration</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Testimonials grid -->
+        <div class="testimonials-grid">
+          <!-- Card 1 -->
+          <article class="testimonial-card reveal" data-anim="fade-up">
+            <div class="t-stars" aria-hidden="true">★★★★★</div>
+            <p class="testimonial-quote">
+              “Sonic streamlined our production planning and integrated seamlessly with our ERP.
+              We saw measurable savings within months.”
+            </p>
+            <div class="testimonial-meta">
+              <span class="t-avatar"><img src="./assets/img/avatars/av1.jpg" alt="Portrait of Operations Director" loading="lazy"></span>
+              <div>
+                <div class="t-name">Operations Director</div>
+                <div class="t-role">Manufacturing</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="testimonial-card reveal" data-anim="fade-up" style="--delay:80ms">
+            <div class="t-stars" aria-hidden="true">★★★★★</div>
+            <p class="testimonial-quote">
+              “The team handled complex third-party integrations and delivered clear dashboards
+              that our managers actually use.”
+            </p>
+            <div class="testimonial-meta">
+              <span class="t-avatar"><img src="./assets/img/avatars/av2.jpg" alt="Portrait of CTO" loading="lazy"></span>
+              <div>
+                <div class="t-name">CTO</div>
+                <div class="t-role">Engineering</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="testimonial-card reveal" data-anim="fade-up" style="--delay:140ms">
+            <div class="t-stars" aria-hidden="true">★★★★★</div>
+            <p class="testimonial-quote">
+              “Timelines were met, risks were managed, and the handover was smooth. Highly recommended.”
+            </p>
+            <div class="testimonial-meta">
+              <span class="t-avatar"><img src="./assets/img/avatars/av3.jpg" alt="Portrait of PMO Lead" loading="lazy"></span>
+              <div>
+                <div class="t-name">PMO Lead</div>
+                <div class="t-role">Infrastructure</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="testimonial-card reveal" data-anim="fade-up" style="--delay:200ms">
+            <div class="t-stars" aria-hidden="true">★★★★★</div>
+            <p class="testimonial-quote">
+              “AI-driven forecasting improved our demand planning and reduced stockouts across sites.”
+            </p>
+            <div class="testimonial-meta">
+              <span class="t-avatar"><img src="./assets/img/avatars/av4.jpg" alt="Portrait of Supply Chain Manager" loading="lazy"></span>
+              <div>
+                <div class="t-name">Supply Chain Manager</div>
+                <div class="t-role">Distribution</div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Trusted by logos (اختياري) -->
+        <div class="testimonials-logos reveal" data-anim="fade-up" style="--delay:260ms">
+          <img src="./assets/img/logos/l1.svg" alt="Client 1" loading="lazy">
+          <img src="./assets/img/logos/l2.svg" alt="Client 2" loading="lazy">
+          <img src="./assets/img/logos/l3.svg" alt="Client 3" loading="lazy">
+          <img src="./assets/img/logos/l4.svg" alt="Client 4" loading="lazy">
+          <img src="./assets/img/logos/l5.svg" alt="Client 5" loading="lazy">
+          <img src="./assets/img/logos/l6.svg" alt="Client 6" loading="lazy">
+        </div>
+
+        <!-- CTA -->
+        <div class="testimonials-cta reveal" data-anim="fade-up" style="--delay:320ms">
+          <p><strong>Ready to see what an <em>Oracle Partner</em> can do for your stack?</strong></p>
+          <div class="actions">
+            <a href="contact.html" class="btn btn--primary btn--magnet">Get a Proposal</a>
+            <a href="about.html" class="btn btn--ghost">Why SONIC</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-bg" aria-hidden="true"></div>
+
+    <div class="container footer-grid section">
+      <div class="footer-col">
+        <a class="footer-brand" href="index.html">
+          <img src="./assets/img/sonic-mark.svg" alt="" class="footer-brand__mark">
+          <span class="footer-brand__name">SONIC</span>
+        </a>
+        <p class="footer-tagline">Let’s revolutionize your business.</p>
+
+        <div class="footer-social">
+          <a href="#" aria-label="LinkedIn" class="soc">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+              <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4zM8 8h3.8v2.05h.05c.53-1 1.82-2.05 3.75-2.05 4 0 4.75 2.63 4.75 6.05V23h-4v-6.6c0-1.57-.03-3.6-2.2-3.6-2.2 0-2.54 1.72-2.54 3.49V23H8z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="X (Twitter)" class="soc">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+              <path d="M17.6 3H21l-8.1 9.3L22.2 21H15l-6-6.6L2.7 21H-.6l8.8-10L-1.4 3H6l5.4 5.9L17.6 3z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="Facebook" class="soc">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+              <path d="M13 22v-8h3l1-4h-4V7c0-1.1.4-2 2-2h2V1h-3c-3 0-5 2-5 5v4H6v4h3v8h4z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-head">Explore</h4>
+        <ul class="footer-links">
+          <li><a href="about.html" class="link-underline">Why Sonic</a></li>
+          <li><a href="testimonials.html" class="link-underline" aria-current="page">Testimonials</a></li>
+          <li><a href="industries.html" class="link-underline">Industries</a></li>
+          <li><a href="contact.html" class="link-underline">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-head">Contact</h4>
+        <ul class="footer-list">
+          <li><a href="mailto:info@sonic-tec.com" class="footer-link">info@sonic-tec.com</a></li>
+          <li class="footer-link">+20 12 000 28101</li>
+          <li class="footer-link">+20 12 022 09016</li>
+          <li class="footer-link">+20 12 239 24052</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-head">Offices</h4>
+        <p class="footer-link">16 Mohammed Thakeb St, Zamalek, Cairo, Egypt</p>
+        <p class="footer-link">Themistokli Dervi 6, Papyrus Building, 4th floor, Flats 3,4&5, 1066 Nicosia, Cyprus</p>
+      </div>
+    </div>
+
+    <div class="footer-note">
+      <div class="container footer-note__row center">
+        © 2025 Sonic Smart Solutions · Designed and Developed by Itqan Solutions
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./assets/js/main.js"></script>
+  <script>
+    // Preloader fallback
+    document.addEventListener('DOMContentLoaded', () => {
+      setTimeout(() => {
+        const pre = document.querySelector('.preloader');
+        if (pre) { pre.classList.add('hidden'); pre.style.display = 'none'; }
+      }, 1200);
+    });
+  </script>
+</body>
+</html>

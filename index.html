@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SONIC — Home</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="icon" href="./assets/img/sonic-mark.svg" type="image/svg+xml" />
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader" aria-hidden="true">
+    <img class="preloader__logo spin" src="./assets/img/sonic-mark.svg" alt="Loading..." />
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container navbar">
+    <a class="brand" href="index.html">
+  <img src="./assets/img/sonic-logo.png" alt="SONIC Logo" class="brand__logo" />
+  <span class="brand__name">SONIC</span>
+</a>
+      <nav class="nav">
+        <a href="./about.html">Why Sonic</a>
+        <a href="./testimonials.html">Testimonials</a>
+        <a href="./industries.html">Industries</a>
+        <a href="./contact.html" class="nav__cta btn--magnet">Let’s Talk</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+    <div class="container nav-mobile">
+      <a href="./about.html">Why Sonic</a>
+      <a href="./testimonials.html">Testimonials</a>
+      <a href="./industries.html">Industries</a>
+      <a href="./contact.html">Contact</a>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <!-- Hero Section -->
+<section class="section hero-block">
+  <div class="container hero-grid">
+    <!-- Left: Headline + Copy + CTAs -->
+    <div class="hero-copy reveal" data-anim="fade-up">
+      <h1 class="hero__title">
+        Automation that boosts efficiency, profitability & growth
+      </h1>
+      <p class="hero__text">
+        Tailored implementations that streamline workflows and deliver measurable impact.
+      </p>
+      <div class="actions">
+        <a href="./contact.html" class="btn btn--primary btn--magnet">Get a Proposal</a>
+        <a href="./about.html" class="btn btn--ghost">Why SONIC</a>
+      </div>
+    </div>
+
+    <!-- Right: Illustration only (no text inside the image) -->
+    <div class="hero-art reveal will-animate" data-parallax data-speed="0.18" aria-hidden="true">
+      <picture>
+        <source srcset="./assets/img/hero-art.png" type="image/webp">
+        <img src="./assets/img/hero-art.png" alt="" loading="eager" fetchpriority="high">
+      </picture>
+      <span class="hero-art__overlay" aria-hidden="true"></span>
+    </div>
+  </div>
+</section>
+
+
+    <!-- What We Deliver -->
+<!-- What We Deliver (Rows with images) -->
+<section class="section section--muted deliver-rows">
+  <div class="container">
+    <h2 class="section__title">What We Deliver</h2>
+    <p class="section__lead">Operational efficiency, cost optimization, and sustainable growth with tailored implementations.</p>
+
+    <!-- Row 1 -->
+    <article class="feature-row reveal" data-anim="slide-right">
+      <div class="feature-media">
+        <img src="./assets/img/WWD1 (1).svg" alt="Streamline Workflows" loading="lazy">
+      </div>
+      <div class="feature-copy">
+        <h3>Streamline Workflows</h3>
+        <p>From back office to shop floor. We map, optimize, and automate the critical paths that slow teams down.</p>
+        <a href="./about.html" class="link-cta">See how we do it →</a>
+      </div>
+    </article>
+
+    <!-- Row 2 -->
+    <article class="feature-row reveal" data-anim="slide-left">
+      <div class="feature-media">
+        <img src="./assets/img/WWD1 (2).svg" alt="Expert Calibers" loading="lazy">
+      </div>
+      <div class="feature-copy">
+        <h3>Expert Calibers</h3>
+        <p>Seasoned delivery team with hands-on expertise across ERP, POS, integrations, data, and AI.</p>
+        <a href="./testimonials.html" class="link-cta">Client outcomes →</a>
+      </div>
+    </article>
+
+    <!-- Row 3 -->
+    <article class="feature-row reveal" data-anim="slide-right">
+      <div class="feature-media">
+        <img src="./assets/img/WWD1 (1).svg" alt="20+ Years" loading="lazy">
+      </div>
+      <div class="feature-copy">
+        <h3>20+ Years</h3>
+        <p>Proven track record delivering at scale in complex, regulated, and multi-entity environments.</p>
+        <a href="./industries.html" class="link-cta">Industries we serve →</a>
+      </div>
+    </article>
+
+    <!-- Row 4 -->
+    <article class="feature-row reveal" data-anim="slide-left">
+      <div class="feature-media">
+        <img src="./assets/img/WWD1 (2).svg" alt="Proven Success" loading="lazy">
+      </div>
+      <div class="feature-copy">
+        <h3>Proven Success</h3>
+        <p>Referenceable wins and measurable KPIs: efficiency, throughput, cost-to-serve, and bottom-line impact.</p>
+        <a href="./contact.html" class="link-cta">Get a proposal →</a>
+      </div>
+    </article>
+  </div>
+</section>
+ <footer class="site-footer">
+  <div class="footer-bg" aria-hidden="true"></div>
+
+  <div class="container footer-grid section">
+    <!-- Brand -->
+    <div class="footer-col">
+      <a class="footer-brand" href="index.html">
+        <img src="./assets/img/sonic-mark.svg" alt="" class="footer-brand__mark">
+        <span class="footer-brand__name">SONIC</span>
+      </a>
+      <p class="footer-tagline">Let’s revolutionize your business.</p>
+
+      <div class="footer-social">
+        <a href="#" aria-label="LinkedIn" class="soc">
+          <!-- LinkedIn -->
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+            <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4zM8 8h3.8v2.05h.05c.53-1 1.82-2.05 3.75-2.05 4 0 4.75 2.63 4.75 6.05V23h-4v-6.6c0-1.57-.03-3.6-2.2-3.6-2.2 0-2.54 1.72-2.54 3.49V23H8z"/>
+          </svg>
+        </a>
+        <a href="#" aria-label="X (Twitter)" class="soc">
+          <!-- X -->
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+            <path d="M17.6 3H21l-8.1 9.3L22.2 21H15l-6-6.6L2.7 21H-.6l8.8-10L-1.4 3H6l5.4 5.9L17.6 3z"/>
+          </svg>
+        </a>
+        <a href="#" aria-label="Facebook" class="soc">
+          <!-- Facebook -->
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+            <path d="M13 22v-8h3l1-4h-4V7c0-1.1.4-2 2-2h2V1h-3c-3 0-5 2-5 5v4H6v4h3v8h4z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h4 class="footer-head">Explore</h4>
+      <ul class="footer-links">
+        <li><a href="about.html" class="link-underline">Why Sonic</a></li>
+        <li><a href="testimonials.html" class="link-underline">Testimonials</a></li>
+        <li><a href="industries.html" class="link-underline">Industries</a></li>
+        <li><a href="contact.html" class="link-underline">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-col">
+      <h4 class="footer-head">Contact</h4>
+      <ul class="footer-list">
+        <li><a href="mailto:info@sonic-tec.com" class="footer-link">info@sonic-tec.com</a></li>
+        <li class="footer-link">+20 12 000 28101</li>
+        <li class="footer-link">+20 12 022 09016</li>
+        <li class="footer-link">+20 12 239 24052</li>
+      </ul>
+    </div>
+
+    <!-- Offices -->
+    <div class="footer-col">
+      <h4 class="footer-head">Offices</h4>
+      <p class="footer-link">16 Mohammed Thakeb St, Zamalek, Cairo, Egypt</p>
+      <p class="footer-link">Themistokli Dervi 6, Papyrus Building, 4th floor, Flats 3,4&5, 1066 Nicosia, Cyprus</p>
+    </div>
+  </div>
+
+  <div class="footer-note">
+  <div class="container footer-note__row center">
+    © 2025 Sonic Smart Solutions · Designed and Developed by Itqan Solutions
+  </div>
+</div>
+
+</footer>
+
+
+  <!-- Scripts -->
+  <script src="./assets/js/main.js"></script>
+<script>
+  // Simple Intersection Observer for .reveal
+  (() => {
+    const els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window) || !els.length) return els.forEach(el => el.classList.add('in-view'));
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('in-view');
+          io.unobserve(e.target);
+        }
+      });
+    }, { rootMargin: '0px 0px -10% 0px', threshold: 0.1 });
+    els.forEach(el => io.observe(el));
+  })();
+</script>
+
+</body>
+</html>
